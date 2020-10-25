@@ -1,5 +1,9 @@
 <?php
 
-require_once 'Router.php';
+require_once 'Autoloader.php';
 
 $router = new Router("GET", "/hello");
+
+$router->get('/hello', function (){
+   echo 'Hello World';
+});

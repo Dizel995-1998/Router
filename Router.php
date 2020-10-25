@@ -13,4 +13,14 @@ class Router extends AbstractRouter
     {
         parent::request("POST", $pattern, $controller );
     }
+
+    public function put($pattern, $controller)
+    {
+        parent::request("PUT", $pattern, $controller );
+    }
+
+    public function delete($pattern, $controller)
+    {
+        parent::request("DELETE", $pattern, $controller );
+    }
 }
